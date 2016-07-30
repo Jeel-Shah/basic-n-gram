@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1468849135749">{:repl-history {:ide [], :local [&quot;[1 2 3]&quot; &quot;(reduce join (map (fn [x] (str (char x))) [72 101 108 108 111 87 111 114 108 100]))&quot; &quot;(join [1 2 3 4])&quot; &quot;(clojure.string/join [1 2 3 4])&quot; &quot;(reduce clojure.string/join (map (fn [x] (str (char x))) [72 101 108 108 111 87 111 114 108 100]))&quot; &quot;(map (fn [x] (str (char x))) [72 101 108 108 111 87 111 114 108 100])&quot; &quot;(clojure.string/join (map (fn [x] (str (char x))) [72 101 108 108 111 87 111 114 108 100]))&quot; &quot;(char \&quot;a\&quot;)&quot; &quot;(.charAt \&quot;A\&quot;)&quot; &quot;(char [25 63])&quot; &quot;(int \&quot;aA\&quot;)&quot; &quot;(int \&quot;a\&quot;)&quot; &quot;(map int \&quot;Aa\&quot;)&quot; &quot;(map int \&quot;a\&quot;)&quot; &quot;(type (map int \&quot;aa\&quot;))&quot;], :remote []}}</component>
+</project>

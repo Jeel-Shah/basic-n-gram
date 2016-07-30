@@ -27,10 +27,18 @@
 (defn split-and-frequent [lines]
   (frequencies lines))
 
+(defn seq-zero [binary-seq]
+  (apply max
+         (map count
+              (set (str/split binary-seq #"1"))))
+  )
 
 (def string-pairs (split-and-frequent-tuple (string-split "<s> I am Sam </s> <s> Sam I am </s> <s> I do not like green eggs and ham </s>")))
-(def word-freq(split-and-frequent (string-split "<s> I am Sam </s> <s> Sam I am </s> <s> I do not like green eggs and ham </s>")))
+(def word-freq (split-and-frequent (string-split "<s> I am Sam </s> <s> Sam I am </s> <s> I do not like green eggs and ham </s>")))
 
 ;; Calculate that bigram probability
-(println (/ (string-pairs ["<s>" "I"])
-            (word-freq "<s>")))
+;(prn (/ (string-pairs ["<s>" "I"])
+;        (word-freq "<s>")))
+
+(prn (seq-zero "1000010001"))
+(prn (seq-zero "1000010001001"))
